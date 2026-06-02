@@ -11,7 +11,7 @@ import Contact from "../components/contact-1";
 export default function Home() {
   return (
 
-    <div>
+    <div className="overflow-x-hidden w-full min-h-screen">
       <HeroSection/>
       <Features/>
       <Integrations/>

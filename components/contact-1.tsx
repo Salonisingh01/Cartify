@@ -1,3 +1,122 @@
+// import { Button } from '@/components/ui/button'
+// import { Card } from '@/components/ui/card'
+// import { Input } from '@/components/ui/input'
+// import { Label } from '@/components/ui/label'
+// import { Textarea } from '@/components/ui/textarea'
+// import Link from 'next/link'
+// import { Mail, MapPin, Phone } from 'lucide-react'
+
+// export default function Contact() {
+//     return (
+//         <section id="contact" className="bg-background @container py-24">
+//             <div className="mx-auto max-w-3xl px-6">
+//                 <div>
+//                     <h1 className="text-balance font-serif text-4xl font-medium sm:text-5xl">Get in Touch</h1>
+//                     <p className="text-muted-foreground mt-4 max-w-md text-balance">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+//                 </div>
+
+//                 <div className="@xl:grid-cols-5 mt-12 grid gap-8">
+//                     <div className="@xl:col-span-2 space-y-6 *:space-y-2">
+//                         <div>
+//                             <p className="text-foreground text-sm font-medium">Email</p>
+//                             <Link
+//                                 href="mailto:hello@example.com"
+//                                 className="text-muted-foreground hover:text-primary text-sm">
+//                                 hello@example.com
+//                             </Link>
+//                         </div>
+
+//                         <div>
+//                             <p className="text-foreground text-sm font-medium">Phone</p>
+//                             <Link
+//                                 href="tel:+1234567890"
+//                                 className="text-muted-foreground hover:text-primary text-sm">
+//                                 +1 (234) 567-890
+//                             </Link>
+//                         </div>
+
+//                         <div>
+//                             <p className="text-foreground text-sm font-medium">Office</p>
+//                             <p className="text-muted-foreground text-sm">123 Main Street, San Francisco, CA 94102</p>
+//                         </div>
+//                     </div>
+
+//                     <Card
+//                         variant="outline"
+//                         className="@xl:col-span-3 p-6">
+//                         <form
+//                             action=""
+//                             className="space-y-5">
+//                             <div className="@md:grid-cols-2 grid gap-4">
+//                                 <div className="space-y-2">
+//                                     <Label
+//                                         htmlFor="name"
+//                                         className="text-sm">
+//                                         Name
+//                                     </Label>
+//                                     <Input
+//                                         type="text"
+//                                         id="name"
+//                                         name="name"
+//                                         placeholder="Your name"
+//                                         required
+//                                     />
+//                                 </div>
+//                                 <div className="space-y-2">
+//                                     <Label
+//                                         htmlFor="email"
+//                                         className="text-sm">
+//                                         Email
+//                                     </Label>
+//                                     <Input
+//                                         type="email"
+//                                         id="email"
+//                                         name="email"
+//                                         placeholder="you@example.com"
+//                                         required
+//                                     />
+//                                 </div>
+//                             </div>
+
+//                             <div className="space-y-2">
+//                                 <Label
+//                                     htmlFor="subject"
+//                                     className="text-sm">
+//                                     Subject
+//                                 </Label>
+//                                 <Input
+//                                     type="text"
+//                                     id="subject"
+//                                     name="subject"
+//                                     placeholder="How can we help?"
+//                                 />
+//                             </div>
+
+//                             <div className="space-y-2">
+//                                 <Label
+//                                     htmlFor="message"
+//                                     className="text-sm">
+//                                     Message
+//                                 </Label>
+//                                 <Textarea
+//                                     id="message"
+//                                     name="message"
+//                                     rows={4}
+//                                     placeholder="Tell us more..."
+//                                     required
+//                                     className="min-h-28"
+//                                 />
+//                             </div>
+
+//                             <Button className="w-full">Send Message</Button>
+//                         </form>
+//                     </Card>
+//                 </div>
+//             </div>
+//         </section>
+//     )
+// }
+
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -8,7 +127,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 
 export default function Contact() {
     return (
-        <section className="bg-background @container py-24">
+        <section id="contact" className="bg-background @container py-24">
             <div className="mx-auto max-w-3xl px-6">
                 <div>
                     <h1 className="text-balance font-serif text-4xl font-medium sm:text-5xl">Get in Touch</h1>
@@ -41,9 +160,12 @@ export default function Contact() {
                         </div>
                     </div>
 
+                    {/* Updated Card styling with smooth animations */}
                     <Card
                         variant="outline"
-                        className="@xl:col-span-3 p-6">
+                        // 1. Added shadow-md and -translate-y-1 by default to create a floating appearance
+                        // 2. Added focus-within utilities so the card reacts dynamically when any inner input field is selected
+                        className="@xl:col-span-3 p-6 shadow-md -translate-y-1 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-black/20 focus-within:-translate-y-2 focus-within:shadow-xl focus-within:shadow-black/5 dark:focus-within:shadow-black/20 focus-within:border-zinc-800 dark:focus-within:border-zinc-200">
                         <form
                             action=""
                             className="space-y-5">
@@ -108,7 +230,7 @@ export default function Contact() {
                                 />
                             </div>
 
-                            <Button className="w-full">Send Message</Button>
+                            <Button className="w-full transition-colors duration-300 active:scale-[0.98]">Send Message</Button>
                         </form>
                     </Card>
                 </div>

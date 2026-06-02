@@ -25,7 +25,7 @@ export default function HeroSection() {
                             <div className="flex items-center justify-between max-md:flex-col">
                                 <div className="max-w-md max-sm:px-6">
                                     <h1 className="text-balance font-serif text-4xl font-medium sm:text-5xl">Ship faster. Integrate smarter.</h1>
-                                    <p className="text-muted-foreground mt-4 text-balance">Veil is your all-in-one engine for adding seamless integrations to your app.</p>
+                                    <p className="text-muted-foreground mt-4 text-balance">Connect APIs, automate workflows, and scale your application with a single platform..</p>
 
                                     <Button
                                         asChild
