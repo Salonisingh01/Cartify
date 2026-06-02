@@ -59,7 +59,7 @@ const IntegrationsIllustration = () => {
                 </div>
                 <div className="border-foreground/15 rounded-full border border-dashed p-2">
                     <div className="bg-card shadow-black/6.5 ring-border relative flex h-8 items-center rounded-full px-3 shadow-sm ring">
-                        <Logo className="h-4" />
+                        <Logo />
                     </div>
                 </div>
                 <div className="bg-card shadow-black/6.5 ring-border relative flex h-8 items-center rounded-full px-3 shadow-sm ring">
