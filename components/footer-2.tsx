@@ -23,7 +23,7 @@ export default function Footer() {
                     <Link
                         href="/"
                         className="flex items-center gap-2">
-                        <Logo className="h-5" />
+                        <Logo/>
                     </Link>
                     <nav className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2">
                         {links.map((link) => (
