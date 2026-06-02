@@ -15,6 +15,7 @@ const social = [
   { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
 ]
 
+
 export default function Footer() {
     return (
         <footer className="bg-background @container border-t py-12">
