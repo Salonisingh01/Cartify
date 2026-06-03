@@ -9,6 +9,7 @@ const links = [
     { label: 'Contact', href: '#' },
 ]
 
+
 const social = [
   { icon: FaTwitter, href: '#', label: 'Twitter' },
   { icon: FaGithub, href: '#', label: 'GitHub' },
@@ -53,3 +54,5 @@ export default function Footer() {
         </footer>
     )
 }
+
+
